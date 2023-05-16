@@ -14,8 +14,8 @@ wincount = 0
 resultBalances = []
 # i = Chance Percentage
 for i in range(0,100,1):
-    balance = Decimal('10.0')
-    initialbet = Decimal('0.10')
+    balance = Decimal('20.0')
+    initialbet = Decimal('0.1')
     bet = initialbet
     # i = Bet Count
     for i in range(0,500,1): 
@@ -37,5 +37,5 @@ for i in range(0,100,1):
     else:
         wincount -= 1
         resultBalances.append(balance)
-    print(wincount)
-print('Max Balance: ' + str(max(resultBalances)))
+    print('Survival chance (between -100 and 100): ' + str(wincount))
+print('Maximum Atteined Balance: ' + str(max(resultBalances)))
